@@ -1,0 +1,14 @@
+[Unit]
+Description=Minecraft Server
+After=network.target playit.service
+
+[Service]
+User=john
+WorkingDirectory=/home/john/mc_server/MinecraftServer
+ExecStart=/usr/bin/screen -DmS mc-console /bin/bash ./start.sh
+ExecStop=/usr/bin/screen -p 0 -S mc-console -X eval 'stuff "stop\015"'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
