@@ -24,6 +24,13 @@ The Proxmox host library (`/mnt/data_pool/library`) is mounted for media ingesti
 - **Service Name:** `jellyfin.service`
 - **Backup Location:** `/opt/proxmox-backups/services/media/jellyfin.service`
 
+## Service Configuration References
+- [Jellyfin Service](../services/media/jellyfin.service)
+- [Prowlarr Service](../services/media/prowlarr.service)
+- [qBittorrent-nox Service](../services/media/qbittorrent-nox.service)
+- [Radarr Service](../services/media/radarr.service)
+- [Sonarr Service](../services/media/sonarr.service)
+
 ## Installation
 - **Method:** Official Repository (`apt`)
 - **Verification:** `systemctl status jellyfin`

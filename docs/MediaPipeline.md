@@ -15,6 +15,14 @@ This container serves as the automated media acquisition hub. It secures all ext
 - **Tunneling:** `/dev/net/tun` passthrough enabled in container config.
 - **Verification:** Run `wg show` inside LXC 105 to confirm tunnel status.
 
+## Service Configuration References
+Links to the backed-up service definitions:
+- [Prowlarr](../services/media/prowlarr.service)
+- [Sonarr](../services/media/sonarr.service)
+- [Radarr](../services/media/radarr.service)
+- [qBittorrent-nox](../services/media/qbittorrent-nox.service)
+- [WireGuard VPN](../services/vpn/wg-quick.service)
+
 ## Filesystem Layout
 The Proxmox host HDD (`/mnt/data_pool`) is mounted into the container as follows:
 

@@ -11,6 +11,9 @@ Acts as the central network-wide ad blocker and local DNS resolver.
 - **Primary Daemon:** `pihole-FTL.service`
 - **Backup Location:** `/opt/proxmox-backups/services/network/pihole-FTL.service`
 
+## Service Configuration References
+- [Pi-hole FTL Service](../services/network/pihole-FTL.service)
+
 ## Blocklist Configuration
 Your current active blocklists are managed through the following sources:
 - **StevenBlack:** [https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
