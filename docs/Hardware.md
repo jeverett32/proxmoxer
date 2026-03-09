@@ -21,3 +21,9 @@
 
 ---
 *Last updated: 2026-03-09*
+
+### Future Improvements
+- [ ] Document UPS power thresholds
+- [ ] Add BIOS/Firmware configuration details
+- [ ] Detail the physical drive bay layout
+- [ ] Backup and Recovery Strategy
