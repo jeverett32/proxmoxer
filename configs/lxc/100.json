@@ -1,0 +1,27 @@
+{
+    "features": "nesting=1,keyctl=1",
+    "cores": 1,
+    "digest": "43ed6e8143464f8c4a1eb3c3007ede678b72a006",
+    "hostname": "pihole",
+    "memory": 512,
+    "onboot": 1,
+    "lxc": [
+        [
+            "lxc.cgroup2.devices.allow",
+            "c 10:200 rwm"
+        ],
+        [
+            "lxc.mount.entry",
+            "/dev/net/tun dev/net/tun none bind,create=file"
+        ]
+    ],
+    "swap": 512,
+    "ostype": "debian",
+    "timezone": "America/Denver",
+    "unprivileged": 1,
+    "arch": "amd64",
+    "tags": "adblock;community-script",
+    "startup": "order=2",
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:A2:33:39,ip=10.1.23.152/24,type=veth",
+    "rootfs": "local-lvm:vm-100-disk-0,size=2G"
+}

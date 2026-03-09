@@ -1,0 +1,20 @@
+{
+    "memory": "12288",
+    "digest": "ee7797f56349cd710b8366e8d28fb5ce9fc6e4a0",
+    "numa": 0,
+    "vmgenid": "8e6717c9-6b99-4fd4-9435-ea1ec32ecb83",
+    "ide2": "none,media=cdrom",
+    "smbios1": "uuid=1e9ea93e-220c-4a3a-b877-a3ba4418dba6",
+    "scsihw": "virtio-scsi-single",
+    "startup": "order=3",
+    "name": "minecraft-server",
+    "boot": "order=scsi0;ide2;net0",
+    "scsi0": "local-lvm:vm-103-disk-0,iothread=1,size=32G",
+    "cores": 2,
+    "ostype": "l26",
+    "sockets": 1,
+    "onboot": 1,
+    "cpu": "host",
+    "meta": "creation-qemu=10.1.2,ctime=1771012219",
+    "net0": "e1000=BC:24:11:72:5A:8A,bridge=vmbr0"
+}

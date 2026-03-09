@@ -1,0 +1,31 @@
+{
+    "memory": 2048,
+    "hostname": "jellyfin",
+    "digest": "ec5a778530bb8aba28ba626e80659611cb4e1209",
+    "lxc": [
+        [
+            "lxc.cgroup2.devices.allow",
+            "c 10:200 rwm"
+        ],
+        [
+            "lxc.mount.entry",
+            "/dev/net/tun dev/net/tun none bind,create=file"
+        ]
+    ],
+    "swap": 512,
+    "unprivileged": 1,
+    "mp0": "/mnt/data_pool/library,mp=/media/movies",
+    "dev0": "/dev/dri/renderD128,gid=993",
+    "rootfs": "local-lvm:vm-104-disk-0,size=16G",
+    "startup": "order=4",
+    "tags": "jellyfin;media",
+    "arch": "amd64",
+    "features": "nesting=1,keyctl=1",
+    "cores": 2,
+    "ostype": "ubuntu",
+    "onboot": 1,
+    "nameserver": "1.1.1.1",
+    "timezone": "America/Denver",
+    "dev1": "/dev/dri/card0,gid=44",
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:3B:82:C9,ip=10.1.23.240/24,ip6=auto,type=veth"
+}

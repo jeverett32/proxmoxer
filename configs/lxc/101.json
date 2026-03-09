@@ -1,0 +1,36 @@
+{
+    "lxc": [
+        [
+            "lxc.cgroup2.devices.allow",
+            "c 226:1 rwm"
+        ],
+        [
+            "lxc.cgroup2.devices.allow",
+            "c 226:128 rwm"
+        ],
+        [
+            "lxc.mount.entry",
+            "/dev/dri/card1 dev/dri/card0 none bind,optional,create=file"
+        ],
+        [
+            "lxc.mount.entry",
+            "/dev/dri/renderD128 dev/dri/renderD128 none bind,optional,create=file"
+        ]
+    ],
+    "swap": 512,
+    "ostype": "debian",
+    "onboot": 1,
+    "hostname": "immich",
+    "memory": 6144,
+    "cores": 4,
+    "features": "nesting=1,keyctl=1",
+    "digest": "59cea0c6967d594dd35bf6657488ef6e8a7281cb",
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:7E:39:2C,ip=10.1.23.157/24,type=veth",
+    "mp0": "/mnt/old_root/mnt/thumbdrive,mp=/import",
+    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
+    "arch": "amd64",
+    "tags": "community-script;photos",
+    "startup": "order=5",
+    "unprivileged": 1,
+    "timezone": "America/Denver"
+}
