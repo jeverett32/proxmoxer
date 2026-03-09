@@ -14,10 +14,10 @@ Centralized management hub for all Docker-based services. Portainer provides the
 - Volumes: Managed via Proxmox LXC snapshots.
 - Stacks: docker-compose.yml manifests are synced from Portainer's internal volume directory.
 - Stack References:
-    - Stack 1: ../services/docker/stacks/stack_1.yml
-    - Stack 2: ../services/docker/stacks/stack_2.yml
-    - Stack 3: ../services/docker/stacks/stack_3.yml
-    - Stack 6: ../services/docker/stacks/stack_6.yml
+    - [Stack 1](../services/docker/stacks/stack_1.yml)
+    - [Stack 2](../services/docker/stacks/stack_2.yml)
+    - [Stack 3](../services/docker/stacks/stack_3.yml)
+    - [Stack 6](../services/docker/stacks/stack_6.yml)
 
 ## Installation & Setup
 To bootstrap a clean LXC (102) with Docker and Portainer:
