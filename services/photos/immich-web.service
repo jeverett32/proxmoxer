@@ -1,0 +1,22 @@
+[Unit]
+Description=Immich Web Service
+After=network.target
+Requires=redis-server.service
+Requires=postgresql.service
+Requires=immich-ml.service
+
+[Service]
+Type=simple
+User=immich
+Group=immich
+UMask=0077
+WorkingDirectory=/opt/immich/app
+EnvironmentFile=/opt/immich/.env
+ExecStart=/usr/bin/node /opt/immich/app/dist/main
+Restart=on-failure
+SyslogIdentifier=immich-web
+StandardOutput=append:/var/log/immich/web.log
+StandardError=append:/var/log/immich/web.log
+
+[Install]
+WantedBy=multi-user.target

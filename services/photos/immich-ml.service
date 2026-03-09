@@ -1,0 +1,19 @@
+[Unit]
+Description=Immich Machine-Learning
+After=network.target
+
+[Service]
+Type=simple
+UMask=0077
+User=immich
+Group=immich
+WorkingDirectory=/opt/immich/app
+EnvironmentFile=/opt/immich/.env
+ExecStart=/opt/immich/app/machine-learning/ml_start.sh
+Restart=on-failure
+SyslogIdentifier=immich-machine-learning
+StandardOutput=append:/var/log/immich/ml.log
+StandardError=append:/var/log/immich/ml.log
+
+[Install]
+WantedBy=multi-user.target
