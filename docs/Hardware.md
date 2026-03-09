@@ -1,5 +1,8 @@
 # Hardware Specifications
 
+## PC
+- **Model:** 2012  Dell Optiplex 7010 Small Form Factor
+
 ## CPU
 - **Model:** Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz
 - **Architecture:** x86_64
