@@ -23,8 +23,8 @@ Welcome to the central documentation repository for the Proxmox home lab. This r
 2. Refer to the specific service page above for manual configuration drift or state restoration.
 
 ### Exterior PC
-<img width="1920" height="1440" alt="image" src="https://github.com/user-attachments/assets/65bb8009-189c-4c42-badc-27018b35208d" />
+<img width="720" height="960" alt="image" src="https://github.com/user-attachments/assets/6aebe1e2-5287-48f7-8de5-28e123a816af" />
 
 ### Interior PC
-<img width="1920" height="1440" alt="image" src="https://github.com/user-attachments/assets/4ec7107b-4525-4f0f-a180-6994c4c1849e" />
+<img width="960" height="720" alt="image" src="https://github.com/user-attachments/assets/4ec7107b-4525-4f0f-a180-6994c4c1849e" />
 
