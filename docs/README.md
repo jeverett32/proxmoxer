@@ -21,3 +21,10 @@ Welcome to the central documentation repository for the Proxmox home lab. This r
 ## Emergency Recovery
 1. Restore the underlying LXC/VM from the latest Proxmox snapshot.
 2. Refer to the specific service page above for manual configuration drift or state restoration.
+
+### Exterior PC
+<img width="1920" height="1440" alt="image" src="https://github.com/user-attachments/assets/65bb8009-189c-4c42-badc-27018b35208d" />
+
+### Interior PC
+<img width="1920" height="1440" alt="image" src="https://github.com/user-attachments/assets/4ec7107b-4525-4f0f-a180-6994c4c1849e" />
+
