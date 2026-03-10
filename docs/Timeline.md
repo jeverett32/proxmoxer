@@ -22,7 +22,7 @@
 * **Configuration:** * **Boot Drive:** 512GB SSD (Fresh Proxmox install)
     * **Storage Pool:** 500GB HDD (Dedicated to Immich/Jellyfin media)
 
-<img width="285" height="639" alt="SSD Card" src="https://github.com/user-attachments/assets/bb026126-292f-4659-aad2-4e374a1a2769" style="transform: rotate(-90deg);"/>
+<img width="787" height="590" alt="49F784A0-4A49-463F-B7EF-EE182B1D4D4F" src="https://github.com/user-attachments/assets/3afe5731-076f-4ae2-9d24-6c6d19332b32" />
 
 **February 25, 2026: Memory Expansion**
 * **Hardware:** [32GB DDR3L-1600 UDIMM](https://www.amazon.com/dp/B0DDH5KWYY?ref=ppx_pop_mob_ap_share)
