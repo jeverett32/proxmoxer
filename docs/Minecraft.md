@@ -30,9 +30,8 @@ The server relies on the `playit` agent to bypass NAT.
 - **Persistence:** Currently running in an interactive session; if the VM reboots, this must be re-launched manually to restore tunnel connectivity.
 
 ## Backup Strategy
-- **World Data:** Managed via Proxmox VM snapshots.
+- **World Data:** World data is backed up to Google Drive weekly at 3am using the DriveBackupV2 plugin and a cronjob.
 - **Server Config:** Config files are versioned in this repository for easy restoration.
-- **Playit Credentials:** Ensure your `~/.playit` configuration directory is included in your VM snapshots.
 
 ## Navigation
 - [Return to Hardware Specs](./Hardware.md)
