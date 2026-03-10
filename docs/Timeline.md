@@ -1,7 +1,7 @@
 ### Homelab Technical Log
 
 **September 7, 2025: Initial Acquisition**
-* **Hardware:** Dell Optiplex 7010 SFF ($30)
+* **Hardware:** Dell Optiplex 7010 SFF ($30 off Facebook Marketplace)
 * **Specs:** 10GB RAM / 500GB HDD
 * **OS/Services:** Windows 10; Minecraft Server
 
@@ -18,7 +18,7 @@
     * **Media/Storage:** Immich, Minecraft Server (VM)
 
 **February 23, 2026: Storage Upgrade**
-* **Hardware:** 512GB ADATA M.2 SATA SSD via [Sabrent 2.5" Adapter](https://www.amazon.com/dp/B01N6PMZLW?ref=ppx_pop_mob_ap_share)
+* **Hardware:** 512GB ADATA M.2 SATA SSD I found in an old laptop at my parents' house via [Sabrent 2.5" Adapter](https://www.amazon.com/dp/B01N6PMZLW?ref=ppx_pop_mob_ap_share) 
 * **Configuration:** * **Boot Drive:** 512GB SSD (Fresh Proxmox install)
     * **Storage Pool:** 500GB HDD (Dedicated to Immich/Jellyfin media)
 
