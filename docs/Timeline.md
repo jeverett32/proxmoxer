@@ -1,4 +1,4 @@
-<img width="590" height="1278" alt="49F784A0-4A49-463F-B7EF-EE182B1D4D4F" src="https://github.com/user-attachments/assets/b72833be-07d7-4ca7-afee-6853f83ce246" />### Homelab Technical Log
+### Homelab Technical Log
 
 **September 7, 2025: Initial Acquisition**
 * **Hardware:** Dell Optiplex 7010 SFF ($30)
@@ -22,7 +22,7 @@
 * **Configuration:** * **Boot Drive:** 512GB SSD (Fresh Proxmox install)
     * **Storage Pool:** 500GB HDD (Dedicated to Immich/Jellyfin media)
 
-<img width="590" height="1278" alt="49F784A0-4A49-463F-B7EF-EE182B1D4D4F" src="https://github.com/user-attachments/assets/bb026126-292f-4659-aad2-4e374a1a2769" />
+<img width="285" height="639" alt="SSD Card" src="https://github.com/user-attachments/assets/bb026126-292f-4659-aad2-4e374a1a2769" />
 
 **February 25, 2026: Memory Expansion**
 * **Hardware:** [32GB DDR3L-1600 UDIMM](https://www.amazon.com/dp/B0DDH5KWYY?ref=ppx_pop_mob_ap_share)
