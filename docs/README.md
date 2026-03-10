@@ -13,7 +13,7 @@ Welcome to the central documentation repository for the Proxmox home lab. This r
 | **104** | **Jellyfin** | Media Consumption | [View](./Jellyfin.md) |
 | **105** | **Media Pipeline** | Acquisition & Processing | [View](./MediaPipeline.md) |
 
-For a timeline of hardware/software upgrades, view [here](./Timeline.md)
+For a technical log of hardware/software upgrades, view [here](./Timeline.md)
 
 ## Maintenance & Backup
 - **Hardware Specs:** Detailed host/pool mapping can be found in [Hardware.md](./Hardware.md).
