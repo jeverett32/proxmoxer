@@ -4,8 +4,8 @@
 Acts as the central network-wide ad blocker and local DNS resolver.
 
 ## Network & Security
-- **Static IP:** 10.1.23.152
-- **Role:** Primary DNS for the 10.1.23.0/24 network.
+- **Static IP:** <IP_ADDRESS>
+- **Role:** Primary DNS for the local network.
 
 ## Service Management
 - **Primary Daemon:** `pihole-FTL.service`
