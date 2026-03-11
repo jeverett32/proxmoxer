@@ -18,12 +18,12 @@
 | **sdb** | WDC WD5000AAKS | 465.8G | Media Data Pool |
 
 ## Network Interfaces
-- **Primary Bridge (vmbr0):** 10.1.23.162
+- **Primary Bridge (vmbr0):** <IP_ADDRESS>
 - **Physical Port:** nic0 (enp0s25)
-- **Tunnel:** Tailscale (100.92.163.44)
+- **Tunnel:** Tailscale <IP_ADDRESS>
 
 ---
-*Last updated: 2026-03-09*
+*Last updated: 2026-03-11*
 
 ### Future Improvements
 - [ ] Document UPS power thresholds
