@@ -4,7 +4,7 @@
 Jellyfin acts as your primary media consumption interface, ingesting the library processed by the Arr stack and providing high-performance streaming.
 
 ## Network & Security
-- **Static IP:** 10.1.23.240
+- **Static IP:** <IP_ADDRESS>
 - **Port:** 8096
 - **Tunneling:** `/dev/net/tun` enabled (Allows VPN integration if needed).
 
