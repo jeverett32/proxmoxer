@@ -4,7 +4,7 @@
 Self-hosted photo and video backup solution, replacing cloud-based alternatives with local storage and AI-powered metadata indexing.
 
 ## Network & Security
-- **Static IP:** 10.1.23.157
+- **Static IP:** <IP_ADDRESS>
 - **Role:** Native systemd-managed photo management.
 
 ## Filesystem Layout
