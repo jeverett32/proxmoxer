@@ -10,7 +10,7 @@ This container serves as the automated media acquisition hub. It secures all ext
 4. **Jellyfin** (External) consumes the processed media from the library.
 
 ## Network & Security
-- **Static IP:** 10.1.23.159
+- **Static IP:** <IP_ADDRESS>
 - **VPN:** WireGuard (Mullvad) via `wg-quick@wg0.service`.
 - **Tunneling:** `/dev/net/tun` passthrough enabled in container config.
 - **Verification:** Run `wg show` inside LXC 105 to confirm tunnel status.
