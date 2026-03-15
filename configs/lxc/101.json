@@ -1,8 +1,12 @@
 {
-    "arch": "amd64",
     "swap": 512,
+    "timezone": "America/Denver",
+    "features": "nesting=1,keyctl=1",
+    "startup": "order=5",
     "unprivileged": 1,
-    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:7E:39:2C,ip=10.1.23.157/24,type=veth",
+    "cores": 4,
+    "memory": 6144,
+    "onboot": 1,
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -21,16 +25,12 @@
             "/dev/dri/renderD128 dev/dri/renderD128 none bind,optional,create=file"
         ]
     ],
-    "features": "nesting=1,keyctl=1",
-    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
-    "onboot": 1,
-    "tags": "community-script;photos",
-    "startup": "order=5",
-    "digest": "59cea0c6967d594dd35bf6657488ef6e8a7281cb",
-    "timezone": "America/Denver",
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:7E:39:2C,ip=10.1.23.157/24,type=veth",
     "mp0": "/mnt/old_root/mnt/thumbdrive,mp=/import",
-    "cores": 4,
+    "digest": "59cea0c6967d594dd35bf6657488ef6e8a7281cb",
+    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
+    "tags": "community-script;photos",
+    "hostname": "immich",
     "ostype": "debian",
-    "memory": 6144,
-    "hostname": "immich"
+    "arch": "amd64"
 }
