@@ -1,12 +1,4 @@
 {
-    "tags": "jellyfin;media",
-    "timezone": "America/Denver",
-    "startup": "order=4",
-    "memory": 2048,
-    "dev0": "/dev/dri/renderD128,gid=993",
-    "dev1": "/dev/dri/card0,gid=44",
-    "digest": "ec5a778530bb8aba28ba626e80659611cb4e1209",
-    "hostname": "jellyfin",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -17,15 +9,23 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "arch": "amd64",
-    "mp0": "/mnt/data_pool/library,mp=/media/movies",
+    "memory": 2048,
+    "dev1": "/dev/dri/card0,gid=44",
     "rootfs": "local-lvm:vm-104-disk-0,size=16G",
-    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:3B:82:C9,ip=10.1.23.240/24,ip6=auto,type=veth",
-    "nameserver": "1.1.1.1",
-    "onboot": 1,
     "ostype": "ubuntu",
-    "unprivileged": 1,
     "features": "nesting=1,keyctl=1",
+    "startup": "order=4",
+    "timezone": "America/Denver",
+    "onboot": 1,
+    "nameserver": "1.1.1.1",
+    "tags": "jellyfin;media",
+    "unprivileged": 1,
     "swap": 512,
-    "cores": 2
+    "dev0": "/dev/dri/renderD128,gid=993",
+    "hostname": "jellyfin",
+    "digest": "ec5a778530bb8aba28ba626e80659611cb4e1209",
+    "cores": 2,
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:3B:82:C9,ip=10.1.23.240/24,ip6=auto,type=veth",
+    "arch": "amd64",
+    "mp0": "/mnt/data_pool/library,mp=/media/movies"
 }
