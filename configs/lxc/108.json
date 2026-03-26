@@ -1,0 +1,13 @@
+{
+    "digest": "470f81aa3b83c6e4d78937c74860e663aea3e1a5",
+    "cores": 2,
+    "arch": "amd64",
+    "unprivileged": 1,
+    "hostname": "mlb-dashboard",
+    "features": "nesting=1",
+    "memory": 2048,
+    "ostype": "ubuntu",
+    "rootfs": "local-lvm:vm-108-disk-0,size=8G",
+    "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:F0:EC:37,ip=10.1.23.172/24,type=veth",
+    "swap": 512
+}
