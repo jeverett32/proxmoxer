@@ -1,14 +1,14 @@
 {
-    "cores": 4,
-    "swap": 512,
-    "digest": "f441ab8f0140b2255dbb5e253360bc6a83898798",
-    "unprivileged": 1,
-    "memory": 4096,
-    "ostype": "ubuntu",
-    "features": "nesting=1",
-    "nameserver": "8.8.8.8",
     "hostname": "mlb-engine",
-    "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:D1:A7:A1,ip=10.1.23.171/24,type=veth",
     "arch": "amd64",
-    "rootfs": "local-lvm:vm-107-disk-0,size=8G"
+    "cores": 4,
+    "ostype": "ubuntu",
+    "rootfs": "local-lvm:vm-107-disk-0,size=8G",
+    "unprivileged": 1,
+    "swap": 512,
+    "nameserver": "8.8.8.8",
+    "digest": "f441ab8f0140b2255dbb5e253360bc6a83898798",
+    "features": "nesting=1",
+    "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:D1:A7:A1,ip=10.1.23.171/24,type=veth",
+    "memory": 4096
 }
