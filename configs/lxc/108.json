@@ -1,13 +1,13 @@
 {
-    "hostname": "mlb-dashboard",
     "arch": "amd64",
-    "ostype": "ubuntu",
     "cores": 2,
-    "rootfs": "local-lvm:vm-108-disk-0,size=8G",
-    "unprivileged": 1,
     "swap": 512,
-    "digest": "470f81aa3b83c6e4d78937c74860e663aea3e1a5",
     "features": "nesting=1",
+    "unprivileged": 1,
+    "rootfs": "local-lvm:vm-108-disk-0,size=8G",
+    "memory": 2048,
     "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:F0:EC:37,ip=10.1.23.172/24,type=veth",
-    "memory": 2048
+    "ostype": "ubuntu",
+    "hostname": "mlb-dashboard",
+    "digest": "470f81aa3b83c6e4d78937c74860e663aea3e1a5"
 }
