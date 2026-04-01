@@ -1,17 +1,14 @@
 {
-    "cores": 4,
-    "features": "nesting=1,keyctl=1",
-    "tags": "community-script;photos",
-    "ostype": "debian",
-    "swap": 512,
-    "mp0": "/mnt/old_root/mnt/thumbdrive,mp=/import",
-    "digest": "59cea0c6967d594dd35bf6657488ef6e8a7281cb",
-    "unprivileged": 1,
-    "arch": "amd64",
-    "startup": "order=5",
-    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
-    "hostname": "immich",
     "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:7E:39:2C,ip=10.1.23.157/24,type=veth",
+    "cores": 4,
+    "tags": "community-script;photos",
+    "mp0": "/mnt/old_root/mnt/thumbdrive,mp=/import",
+    "arch": "amd64",
+    "timezone": "America/Denver",
+    "onboot": 1,
+    "features": "nesting=1,keyctl=1",
+    "startup": "order=5",
+    "swap": 512,
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -30,7 +27,10 @@
             "/dev/dri/renderD128 dev/dri/renderD128 none bind,optional,create=file"
         ]
     ],
-    "timezone": "America/Denver",
     "memory": 6144,
-    "onboot": 1
+    "ostype": "debian",
+    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
+    "hostname": "immich",
+    "unprivileged": 1,
+    "digest": "59cea0c6967d594dd35bf6657488ef6e8a7281cb"
 }
