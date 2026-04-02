@@ -1,19 +1,10 @@
 {
-    "features": "nesting=1",
-    "nameserver": "1.1.1.1",
-    "mp0": "/mnt/data_pool/torrents,mp=/downloads",
-    "arch": "amd64",
-    "net0": "name=eth0,bridge=vmbr0,firewall=1,gw=10.1.23.1,hwaddr=BC:24:11:19:02:DD,ip=10.1.23.159/24,type=veth",
-    "cores": 2,
-    "searchdomain": "host",
-    "hostname": "media",
-    "mp1": "/mnt/data_pool/library,mp=/library",
-    "digest": "9f8a0cea879ca0e62ce80ff98d238e2781c47578",
-    "unprivileged": 1,
-    "memory": 1024,
-    "ostype": "ubuntu",
     "rootfs": "local-lvm:vm-105-disk-0,size=20G",
-    "swap": 512,
+    "mp0": "/mnt/data_pool/torrents,mp=/downloads",
+    "features": "nesting=1",
+    "memory": 1024,
+    "mp1": "/mnt/data_pool/library,mp=/library",
+    "searchdomain": "host",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -27,5 +18,14 @@
             "lxc.apparmor.profile",
             "unconfined"
         ]
-    ]
+    ],
+    "ostype": "ubuntu",
+    "hostname": "media",
+    "swap": 512,
+    "arch": "amd64",
+    "cores": 2,
+    "nameserver": "1.1.1.1",
+    "unprivileged": 1,
+    "digest": "9f8a0cea879ca0e62ce80ff98d238e2781c47578",
+    "net0": "name=eth0,bridge=vmbr0,firewall=1,gw=10.1.23.1,hwaddr=BC:24:11:19:02:DD,ip=10.1.23.159/24,type=veth"
 }
