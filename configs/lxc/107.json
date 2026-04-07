@@ -1,15 +1,15 @@
 {
-    "hostname": "mlb-app",
-    "features": "nesting=1",
-    "searchdomain": "local",
-    "arch": "amd64",
-    "unprivileged": 1,
-    "ostype": "ubuntu",
     "digest": "96a419c86b085ef6bdb6ad87fb5db84e315ffff6",
-    "swap": 512,
     "rootfs": "local-lvm:vm-107-disk-0,size=10G",
+    "arch": "amd64",
+    "searchdomain": "local",
     "cores": 4,
-    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:DF:4A:FA,ip=10.1.23.161/24,type=veth",
+    "hostname": "mlb-app",
     "nameserver": "10.1.23.152",
-    "memory": 4096
+    "memory": 4096,
+    "swap": 512,
+    "features": "nesting=1",
+    "unprivileged": 1,
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:DF:4A:FA,ip=10.1.23.161/24,type=veth",
+    "ostype": "ubuntu"
 }
