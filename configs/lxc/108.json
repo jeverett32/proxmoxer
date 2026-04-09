@@ -1,13 +1,15 @@
 {
-    "arch": "amd64",
-    "cores": 2,
-    "swap": 512,
-    "features": "nesting=1",
     "unprivileged": 1,
-    "rootfs": "local-lvm:vm-108-disk-0,size=8G",
+    "features": "nesting=1",
+    "digest": "f84e723aab38c1534c665de70e0bcd33d8b2c82e",
     "memory": 2048,
-    "net0": "name=eth0,bridge=vmbr0,firewall=1,hwaddr=BC:24:11:F0:EC:37,ip=10.1.23.172/24,type=veth",
+    "cores": 2,
+    "searchdomain": "local",
+    "hostname": "northstar-predict",
     "ostype": "ubuntu",
-    "hostname": "mlb-dashboard",
-    "digest": "470f81aa3b83c6e4d78937c74860e663aea3e1a5"
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:20:8F:6B,ip=10.1.23.170/24,type=veth",
+    "nameserver": "10.1.23.152",
+    "rootfs": "local-lvm:vm-108-disk-0,size=8G",
+    "arch": "amd64",
+    "swap": 512
 }
