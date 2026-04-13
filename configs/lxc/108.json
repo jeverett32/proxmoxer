@@ -1,15 +1,15 @@
 {
-    "cores": 2,
-    "features": "nesting=1",
+    "ostype": "ubuntu",
+    "searchdomain": "local",
     "unprivileged": 1,
+    "hostname": "northstar-predict",
+    "memory": 2048,
+    "arch": "amd64",
     "nameserver": "10.1.23.152",
     "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:20:8F:6B,ip=10.1.23.170/24,type=veth",
+    "cores": 2,
+    "features": "nesting=1",
     "rootfs": "local-lvm:vm-108-disk-0,size=8G",
-    "arch": "amd64",
     "digest": "f84e723aab38c1534c665de70e0bcd33d8b2c82e",
-    "searchdomain": "local",
-    "hostname": "northstar-predict",
-    "ostype": "ubuntu",
-    "swap": 512,
-    "memory": 2048
+    "swap": 512
 }
