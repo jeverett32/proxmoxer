@@ -1,15 +1,15 @@
 {
-    "ostype": "ubuntu",
-    "hostname": "mlb-db",
-    "unprivileged": 1,
-    "arch": "amd64",
-    "features": "nesting=1",
-    "memory": 1024,
     "nameserver": "10.1.23.152",
-    "swap": 512,
-    "cores": 1,
-    "rootfs": "local-lvm:vm-106-disk-0,size=8G",
-    "searchdomain": "local",
     "digest": "ed23d4768777d3e14f602179625360109b102982",
-    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:5E:97:85,ip=10.1.23.160/24,type=veth"
+    "rootfs": "local-lvm:vm-106-disk-0,size=8G",
+    "hostname": "mlb-db",
+    "features": "nesting=1",
+    "arch": "amd64",
+    "unprivileged": 1,
+    "cores": 1,
+    "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:5E:97:85,ip=10.1.23.160/24,type=veth",
+    "swap": 512,
+    "ostype": "ubuntu",
+    "searchdomain": "local",
+    "memory": 1024
 }
