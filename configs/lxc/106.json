@@ -1,15 +1,15 @@
 {
+    "rootfs": "local-lvm:vm-106-disk-0,size=8G",
+    "swap": 512,
+    "cores": 1,
+    "memory": 1024,
     "arch": "amd64",
     "digest": "ed23d4768777d3e14f602179625360109b102982",
-    "cores": 1,
-    "nameserver": "10.1.23.152",
     "net0": "name=eth0,bridge=vmbr0,gw=10.1.23.1,hwaddr=BC:24:11:5E:97:85,ip=10.1.23.160/24,type=veth",
-    "memory": 1024,
-    "searchdomain": "local",
+    "nameserver": "10.1.23.152",
     "unprivileged": 1,
     "features": "nesting=1",
+    "searchdomain": "local",
     "ostype": "ubuntu",
-    "swap": 512,
-    "rootfs": "local-lvm:vm-106-disk-0,size=8G",
     "hostname": "mlb-db"
 }
