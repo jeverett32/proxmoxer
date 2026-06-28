@@ -6,7 +6,7 @@ from proxmoxer import ProxmoxAPI
 # Use 'localhost' since it's running on the server itself
 HOST = 'localhost' 
 USER = 'root@pam'
-PASSWORD = 'txDn0sw@Id%rGKlemon' 
+PASSWORD = 'password' 
 BACKUP_DIR = '/opt/proxmox-backups/configs'
 
 proxmox = ProxmoxAPI(HOST, user=USER, password=PASSWORD, verify_ssl=False)
