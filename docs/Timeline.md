@@ -30,6 +30,14 @@
 * **Hardware:** [32GB DDR3L-1600 UDIMM](https://www.amazon.com/dp/B0DDH5KWYY?ref=ppx_pop_mob_ap_share)
 * **Allocation:** 12GB dedicated to Minecraft; 20GB for LXC containers and VMs
 
+
+**August 12, 2026: Service hygiene & upgrades**
+* **Immich:** Upgraded LXC 101 from 2.5.6 → **3.1.0** (VectorChord 1.1.1); community-scripts `update` requires `HOME=/root`
+* **Paseo:** VM 109 boot disk resized 52G → **64G** (8G RAM)
+* **Actual Budget:** Added LXC 110 (Docker Compose + Tailscale)
+* **Docker CT 102 cleanup:** Removed unused Watchtower, Miniflux, n8n (+ images/volumes); dropped unused `docker-buildx-plugin`, `docker-model-plugin`, `docker-ce-rootless-extras`
+* **Remaining Docker apps:** Portainer, Uptime Kuma, Cloudflared
+
 #### **NEXT STEPS**
 * Clean dust from inside desktop
 * Reapply thermal paste to CPU

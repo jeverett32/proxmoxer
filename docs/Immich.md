@@ -34,6 +34,11 @@ Self-hosted photo and video backup solution, replacing cloud-based alternatives 
 - [PostgreSQL](../services/photos/postgresql.service)
 - [Redis](../services/photos/redis.service)
 
+## Disk notes
+- Rootfs is ~100G; library data lives under `/opt/immich/upload/` (majority of usage).
+- Optional leftovers after upgrades (`/opt/staging`, `/root/.local`, `/root/.cache`, `/opt/binaryen-version_*`) can be trimmed if free space gets tight — not required while ~40G+ free remains.
+- In-app DB dumps under `/opt/immich/upload/backups/` rotate on Immich's schedule; prune older files manually if desired.
+
 ## Installation
 - **Method:** Automated installation script
 - **Source:** [community-scripts / ProxmoxVE](https://github.com/community-scripts/ProxmoxVE) (`ct/immich.sh`)

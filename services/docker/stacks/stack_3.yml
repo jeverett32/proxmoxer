@@ -4,4 +4,4 @@ services:
     image: cloudflare/cloudflared:latest
     container_name: cloudflared
     restart: unless-stopped
-    command: tunnel --no-autoupdate run --token [token]
+    command: tunnel --no-autoupdate run --token <REDACTED_TOKEN>

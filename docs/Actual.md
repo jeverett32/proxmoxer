@@ -15,8 +15,8 @@ Self-hosted [Actual Budget](https://actualbudget.org/) server for personal finan
 ## Network & Access
 - **LAN IP (DHCP):** `<IP_ADDRESS>`
 - **Tailscale IP:** `<IP_ADDRESS>`
-- **Listen:** ``<IP_ADDRESS>`:5006` and ``<IP_ADDRESS>`:5006` (HTTPS via self-signed certs in compose)
-- Prefer Tailscale IP from other hosts (e.g. Cloudflare Tunnel / Uptime Kuma). Use `noTLSVerify` if the edge proxy does not trust the self-signed cert.
+- **Listen:** `127.0.0.1:5006` and Tailscale IP `:5006` (HTTPS via self-signed certs in compose)
+- Prefer Tailscale from other hosts (e.g. Cloudflare Tunnel / Uptime Kuma). Use `noTLSVerify` if the edge proxy does not trust the self-signed cert.
 
 ## Filesystem Layout
 - **Stack:** `/opt/actual/compose.yaml`

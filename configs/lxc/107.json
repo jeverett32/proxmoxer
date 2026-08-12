@@ -6,8 +6,10 @@
     "memory": 4096,
     "arch": "amd64",
     "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:30:9E,ip=dhcp,type=veth",
-    "swap": 512,
     "digest": "520a9ffcb7a455cb4a497985c9fc02f726b7dde3",
+    "swap": 512,
+    "onboot": 1,
+    "features": "nesting=1",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -18,10 +20,8 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "onboot": 1,
-    "features": "nesting=1",
-    "ostype": "ubuntu",
     "startup": "order=3",
+    "unprivileged": 1,
     "nameserver": "10.1.23.152",
-    "unprivileged": 1
+    "ostype": "ubuntu"
 }
