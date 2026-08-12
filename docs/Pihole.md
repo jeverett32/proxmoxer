@@ -4,7 +4,8 @@
 Acts as the central network-wide ad blocker and local DNS resolver.
 
 ## Network & Security
-- **Static IP:** <IP_ADDRESS>
+- **LAN IP:** `<IP_ADDRESS>`
+- **Tailscale:** `<IP_ADDRESS>`
 - **Role:** Primary DNS for the local network.
 
 ## Service Management
@@ -27,3 +28,6 @@ Your current active blocklists are managed through the following sources:
 
 ## Installation
 - **Method:** `curl -sSL https://install.pi-hole.net | bash`
+
+---
+*Last updated: 2026-08-12*

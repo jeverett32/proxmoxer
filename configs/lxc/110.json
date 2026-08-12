@@ -1,0 +1,28 @@
+{
+    "lxc": [
+        [
+            "lxc.cgroup2.devices.allow",
+            "c 10:200 rwm"
+        ],
+        [
+            "lxc.mount.entry",
+            "/dev/net/tun dev/net/tun none bind,create=file"
+        ]
+    ],
+    "onboot": 1,
+    "features": "nesting=1",
+    "ostype": "ubuntu",
+    "startup": "order=7",
+    "unprivileged": 1,
+    "nameserver": "8.8.8.8 1.1.1.1",
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:E2:32:5E,ip=dhcp,type=veth",
+    "swap": 512,
+    "digest": "91f86fd9ce55fa58511166a9854fc5bbb410f138",
+    "cores": 2,
+    "memory": 2048,
+    "arch": "amd64",
+    "tags": "finance",
+    "timezone": "America/Denver",
+    "rootfs": "local-lvm:vm-110-disk-0,size=8G",
+    "hostname": "actual"
+}

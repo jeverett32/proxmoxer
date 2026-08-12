@@ -1,1 +1,5 @@
 services/vpn/wg0.conf
+
+# Never commit secrets
+secrets.env
+*.env

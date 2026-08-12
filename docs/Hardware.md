@@ -1,7 +1,7 @@
 # Hardware Specifications
 
 ## PC
-- **Model:** 2012  Dell Optiplex 7010 Small Form Factor
+- **Model:** 2012 Dell Optiplex 7010 Small Form Factor
 
 ## CPU
 - **Model:** Intel(R) Core(TM) i5-3550 CPU @ 3.30GHz
@@ -14,16 +14,18 @@
 ## Storage Layout
 | Device | Model | Size | Role |
 | :--- | :--- | :--- | :--- |
-| **sda** | ADATA SU800NS38 | 476.9G | Proxmox OS & Local Storage |
-| **sdb** | WDC WD5000AAKS | 465.8G | Media Data Pool |
+| **sda** | ADATA SU800NS38 | 476.9G | Proxmox OS & Local Storage (`local` / `local-lvm`) |
+| **sdb** | WDC WD5000AAKS | 465.8G | Media / secondary data (`old_hdd_data`) |
 
 ## Network Interfaces
-- **Primary Bridge (vmbr0):** <IP_ADDRESS>
+- **Primary Bridge (vmbr0):** `<IP_ADDRESS>`
 - **Physical Port:** nic0 (enp0s25)
-- **Tunnel:** Tailscale <IP_ADDRESS>
+- **Tunnel:** Tailscale `<IP_ADDRESS>`
+
+> Note: LAN addressing moved off the old `10.1.23.0/24` range. Prefer current DHCP leases / Tailscale IPs recorded privately (not in this public repo).
 
 ---
-*Last updated: 2026-03-11*
+*Last updated: 2026-08-12*
 
 ### Future Improvements
 - [ ] Document UPS power thresholds
