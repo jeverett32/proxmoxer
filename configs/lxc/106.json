@@ -1,11 +1,16 @@
 {
-    "unprivileged": 1,
-    "memory": 1024,
-    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:29:F7:9D,ip=dhcp,type=veth",
-    "nameserver": "10.1.23.152",
     "startup": "order=4",
-    "ostype": "ubuntu",
+    "searchdomain": "local",
+    "arch": "amd64",
+    "hostname": "mlb-db",
+    "nameserver": "10.1.23.152",
+    "cores": 1,
     "digest": "b8a0d5b44f5bcfcf6cd0d12a57112307dcea6ca9",
+    "onboot": 1,
+    "features": "nesting=1",
+    "unprivileged": 1,
+    "swap": 512,
+    "ostype": "ubuntu",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -16,12 +21,7 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "cores": 1,
-    "swap": 512,
-    "searchdomain": "local",
-    "rootfs": "local-lvm:vm-106-disk-0,size=16G",
-    "features": "nesting=1",
-    "hostname": "mlb-db",
-    "onboot": 1,
-    "arch": "amd64"
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:29:F7:9D,ip=dhcp,type=veth",
+    "memory": 1024,
+    "rootfs": "local-lvm:vm-106-disk-0,size=16G"
 }
