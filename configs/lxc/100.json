@@ -1,13 +1,6 @@
 {
-    "hostname": "pihole",
-    "unprivileged": 1,
-    "ostype": "debian",
-    "arch": "amd64",
-    "swap": 512,
-    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:86:BA:E1,ip=dhcp,type=veth",
-    "digest": "f71955b8c6013d054e0d0d9559783ab015d679e6",
-    "timezone": "America/Denver",
-    "startup": "order=2",
+    "features": "nesting=1,keyctl=1",
+    "memory": 512,
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -18,10 +11,17 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "features": "nesting=1,keyctl=1",
-    "memory": 512,
-    "onboot": 1,
+    "timezone": "America/Denver",
+    "startup": "order=2",
+    "ostype": "debian",
+    "hostname": "pihole",
     "tags": "adblock;community-script",
+    "unprivileged": 1,
+    "onboot": 1,
+    "digest": "f71955b8c6013d054e0d0d9559783ab015d679e6",
+    "cores": 1,
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:86:BA:E1,ip=dhcp,type=veth",
     "rootfs": "local-lvm:vm-100-disk-0,size=4G",
-    "cores": 1
+    "arch": "amd64",
+    "swap": 512
 }
