@@ -1,10 +1,17 @@
 {
-    "tags": "community-script;photos",
+    "memory": 6144,
     "features": "nesting=1",
+    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
+    "cores": 4,
+    "tags": "community-script;photos",
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:DD:94:5C,ip=dhcp,type=veth",
     "arch": "amd64",
+    "onboot": 1,
+    "startup": "order=6",
+    "ostype": "debian",
+    "timezone": "America/Denver",
     "digest": "a5f6ac030384f494c62d0e45d2b264860fe41391",
     "hostname": "immich",
-    "ostype": "debian",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -15,13 +22,6 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "unprivileged": 1,
-    "onboot": 1,
-    "rootfs": "local-lvm:vm-101-disk-0,size=100G",
-    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:DD:94:5C,ip=dhcp,type=veth",
-    "timezone": "America/Denver",
-    "memory": 6144,
     "swap": 512,
-    "cores": 4,
-    "startup": "order=6"
+    "unprivileged": 1
 }
