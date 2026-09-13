@@ -1,4 +1,10 @@
 {
+    "unprivileged": 1,
+    "digest": "b8c99cf9cf66879a1774f25fdf95c6c3d7d4988b",
+    "onboot": 1,
+    "features": "nesting=1",
+    "swap": 512,
+    "cores": 2,
     "arch": "amd64",
     "lxc": [
         [
@@ -10,16 +16,10 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "features": "nesting=1",
-    "unprivileged": 1,
-    "swap": 512,
+    "memory": 2048,
+    "ostype": "ubuntu",
+    "rootfs": "local-lvm:vm-108-disk-0,size=12G",
     "nameserver": "1.1.1.1",
     "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:5A:3B:D0,ip=dhcp,type=veth",
-    "onboot": 1,
-    "rootfs": "local-lvm:vm-108-disk-0,size=12G",
-    "ostype": "ubuntu",
-    "cores": 2,
-    "memory": 2048,
-    "digest": "b8c99cf9cf66879a1774f25fdf95c6c3d7d4988b",
     "hostname": "arr-dashboard"
 }
