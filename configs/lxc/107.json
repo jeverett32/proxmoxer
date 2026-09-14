@@ -1,7 +1,11 @@
 {
+    "unprivileged": 1,
+    "features": "nesting=1",
+    "arch": "amd64",
+    "searchdomain": "local",
     "nameserver": "10.1.23.152",
-    "hostname": "mlb-app",
-    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:30:9E,ip=dhcp,type=veth",
+    "swap": 512,
+    "ostype": "ubuntu",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -12,16 +16,12 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "memory": 4096,
-    "ostype": "ubuntu",
-    "rootfs": "local-lvm:vm-107-disk-0,size=20G",
-    "features": "nesting=1",
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:61:30:9E,ip=dhcp,type=veth",
     "onboot": 1,
+    "hostname": "mlb-app",
     "cores": 4,
-    "arch": "amd64",
-    "swap": 512,
+    "memory": 4096,
+    "rootfs": "local-lvm:vm-107-disk-0,size=20G",
     "startup": "order=3",
-    "searchdomain": "local",
-    "digest": "520a9ffcb7a455cb4a497985c9fc02f726b7dde3",
-    "unprivileged": 1
+    "digest": "520a9ffcb7a455cb4a497985c9fc02f726b7dde3"
 }
