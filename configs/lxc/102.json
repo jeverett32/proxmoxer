@@ -1,13 +1,14 @@
 {
-    "hostname": "docker",
-    "nameserver": "8.8.8.8 1.1.1.1",
     "timezone": "America/Denver",
+    "rootfs": "local-lvm:vm-102-disk-0,size=16G",
     "onboot": 1,
+    "nameserver": "8.8.8.8 1.1.1.1",
+    "cores": 2,
     "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:0D:2E:1C,ip=dhcp,type=veth",
-    "startup": "order=1",
-    "digest": "cdfea4addb3c888d50409a5a544b3c2d85486375",
-    "swap": 512,
+    "hostname": "docker",
+    "ostype": "debian",
     "memory": 2048,
+    "tags": "community-script;docker",
     "lxc": [
         [
             "lxc.apparmor.profile",
@@ -22,11 +23,10 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "unprivileged": 1,
-    "tags": "community-script;docker",
     "features": "nesting=1,keyctl=1",
-    "ostype": "debian",
+    "startup": "order=1",
+    "digest": "cdfea4addb3c888d50409a5a544b3c2d85486375",
     "arch": "amd64",
-    "cores": 2,
-    "rootfs": "local-lvm:vm-102-disk-0,size=16G"
+    "swap": 512,
+    "unprivileged": 1
 }
