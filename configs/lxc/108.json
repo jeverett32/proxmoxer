@@ -1,17 +1,12 @@
 {
-    "unprivileged": 1,
-    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:5A:3B:D0,ip=dhcp,type=veth",
+    "rootfs": "local-lvm:vm-108-disk-0,size=12G",
     "memory": 2048,
-    "cores": 2,
+    "unprivileged": 1,
     "nameserver": "1.1.1.1",
     "digest": "b8c99cf9cf66879a1774f25fdf95c6c3d7d4988b",
+    "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:5A:3B:D0,ip=dhcp,type=veth",
     "features": "nesting=1",
-    "ostype": "ubuntu",
-    "onboot": 1,
-    "swap": 512,
-    "arch": "amd64",
-    "rootfs": "local-lvm:vm-108-disk-0,size=12G",
-    "hostname": "arr-dashboard",
+    "cores": 2,
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -21,5 +16,10 @@
             "lxc.mount.entry",
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
-    ]
+    ],
+    "onboot": 1,
+    "ostype": "ubuntu",
+    "arch": "amd64",
+    "swap": 512,
+    "hostname": "arr-dashboard"
 }
