@@ -1,8 +1,5 @@
 {
-    "swap": 512,
-    "startup": "order=7",
-    "onboot": 1,
-    "memory": 2048,
+    "ostype": "ubuntu",
     "lxc": [
         [
             "lxc.cgroup2.devices.allow",
@@ -13,16 +10,19 @@
             "/dev/net/tun dev/net/tun none bind,create=file"
         ]
     ],
-    "cores": 2,
-    "timezone": "America/Denver",
-    "tags": "finance",
-    "ostype": "ubuntu",
-    "features": "nesting=1",
-    "arch": "amd64",
-    "digest": "91f86fd9ce55fa58511166a9854fc5bbb410f138",
+    "unprivileged": 1,
     "net0": "name=eth0,bridge=vmbr0,hwaddr=BC:24:11:E2:32:5E,ip=dhcp,type=veth",
+    "startup": "order=7",
+    "memory": 2048,
     "rootfs": "local-lvm:vm-110-disk-0,size=8G",
+    "digest": "91f86fd9ce55fa58511166a9854fc5bbb410f138",
+    "cores": 2,
+    "tags": "finance",
     "hostname": "actual",
+    "onboot": 1,
     "nameserver": "8.8.8.8 1.1.1.1",
-    "unprivileged": 1
+    "timezone": "America/Denver",
+    "arch": "amd64",
+    "swap": 512,
+    "features": "nesting=1"
 }
